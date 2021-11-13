@@ -1,6 +1,7 @@
 # CatGirls
-catgirls for mc ctjs
-/cg or /catgirls to open the config menu.
+CatGirls for Minecraft Chattriggers.
+
+/catgirls or /cg to open the config menu.
 
 How to download:
  - Download .zip file from Releases or from the code dropdown.
