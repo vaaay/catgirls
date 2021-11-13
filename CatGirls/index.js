@@ -8,7 +8,7 @@ const imagesa = [
   new Image("catgirl1.png", "https://i.imgur.com/hGJEqWs.png"),
   new Image("catgirl2.png", "https://i.imgur.com/zEjvcyX.png"),
   new Image("catgirl3.png", "https://i.imgur.com/S9cIM1h.png"),
-  new Image("catgirl4.png", "https://i.imgur.com/0g8GwCW.png"),
+  new Image("catgirl4.png", "https://i.imgur.com/by4hljL.png"),
   new Image("catgirl5.png", "https://i.imgur.com/BFSv5kB.png")
 ];
 
