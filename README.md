@@ -12,5 +12,5 @@ How to download:
 
  Changelog:
  v1.1.0
- - Fixed a bug that swapped cat girls too fast spamming your screen (Thanks Unclaimed <3)
+ - Fixed a bug that swapped cat girls too fast spamming your screen (Thanks Unclaimed and Debug <3)
  - Added Cat Boy mode and NSFW mode in /catgirls
