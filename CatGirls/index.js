@@ -1,7 +1,8 @@
 // CHANGELOG v1.1.0 = - Fixed bug that swapped cat girls too fast spamming your screen (Thanks Unclaimed and Debug <3)
 //                    - Added Cat Boy mode and NSFW mode
-// CHANGELOG v1.2.0 = - Added Custom CatGirls Image setting.
-//                    - Added lots of new Cat girls and Cat boys
+//
+// CHANGELOG v1.2.0 = - Added option to use custom Cat Girl images
+//                    - Added Cat Girls and Cat Boys
 
 import Settings from "./settings"
 import settings from "./settings"
