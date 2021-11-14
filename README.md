@@ -10,7 +10,13 @@ How to download:
  - Drag the CatGirls folder into the Chattriggers Modules.
  - Use /ct load in game.
 
- Changelog:
+ Changelog
+ 
+ v1.2.0
+ - Added option to use custom Cat Girl images.
+ - Added Cat Girls and Cat Boys.
+ 
  v1.1.0
  - Fixed a bug that swapped cat girls too fast spamming your screen (Thanks Unclaimed and Debug <3)
  - Added Cat Boy mode and NSFW mode in /catgirls
+
