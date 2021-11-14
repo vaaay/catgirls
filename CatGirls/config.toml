@@ -1,0 +1,19 @@
+
+[general]
+
+	[general.mode]
+		"&a&lnsfw_mode" = false
+		cat_boy = false
+
+[custom_catgirls]
+
+	[custom_catgirls.cutomize_images]
+		custom_catgirl_image_4_address = "https://i.imgur.com/by4hljL.png"
+		custom_catgirl_image_5_address = "https://i.imgur.com/BFSv5kB.png"
+		custom_catgirl_image_1_address = "https://i.imgur.com/m7dMqlX.png"
+		custom_catgirl_image_2_address = "https://i.imgur.com/T7gYvwn.png"
+		custom_catgirl_image_3_address = "https://i.imgur.com/S9cIM1h.png"
+
+	[custom_catgirls.customize]
+		use_own_custom_catgirls = false
+

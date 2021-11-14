@@ -1,5 +1,6 @@
 import {
     @SwitchProperty,
+    @TextProperty,
     @Vigilant,
 } from '../Vigilance/index';
 
@@ -9,6 +10,7 @@ class Settings {
         constructor() {
             this.initialize(this);
             this.setCategoryDescription("General", "&3Catgirls are great!")
+            this.setCategoryDescription("Custom CatGirls", "&3You know what's better than Cat Girls? Cat Girls that you specifically choose to your liking!")
         }
 
 
@@ -29,6 +31,58 @@ class Settings {
         })
         catboyMode = false;
 
+        @SwitchProperty({
+            name: "Use own custom CatGirls",
+            description: "Use your own custom CatGirl images. Run /ct load after setting all the image addresses to activate them.",
+            category: "Custom CatGirls",
+            subcategory: "Customize"
+        })
+        customCatGirls = false;
+
+        @TextProperty({
+            name: "Custom CatGirl image 1 address",
+            description: "This is the image address for your custom catgirl image 1.",
+            category: "Custom CatGirls",
+            subcategory: "Cutomize Images",
+            placeholder: "https://i.imgur.com/hGJEqWs.png",
+        })
+        image1address = "https://i.imgur.com/hGJEqWs.png";
+
+        @TextProperty({
+            name: "Custom CatGirl image 2 address",
+            description: "This is the image address for your custom catgirl image 2.",
+            category: "Custom CatGirls",
+            subcategory: "Cutomize Images",
+            placeholder: "https://i.imgur.com/zEjvcyX.png",
+        })
+        image2address = "https://i.imgur.com/zEjvcyX.png";
+
+        @TextProperty({
+            name: "Custom CatGirl image 3 address",
+            description: "This is the image address for your custom catgirl image 3.",
+            category: "Custom CatGirls",
+            subcategory: "Cutomize Images",
+            placeholder: "https://i.imgur.com/S9cIM1h.png",
+        })
+        image3address = "https://i.imgur.com/S9cIM1h.png";
+
+        @TextProperty({
+            name: "Custom CatGirl image 4 address",
+            description: "This is the image address for your custom catgirl image 4.",
+            category: "Custom CatGirls",
+            subcategory: "Cutomize Images",
+            placeholder: "https://i.imgur.com/by4hljL.png",
+        })
+        image4address = "https://i.imgur.com/by4hljL.png";
+
+        @TextProperty({
+            name: "Custom CatGirl image 5 address",
+            description: "This is the image address for your custom catgirl image 5.",
+            category: "Custom CatGirls",
+            subcategory: "Cutomize Images",
+            placeholder: "https://i.imgur.com/BFSv5kB.png",
+        })
+        image5address = "https://i.imgur.com/BFSv5kB.png";
 
 }
 
