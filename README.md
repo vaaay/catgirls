@@ -10,7 +10,11 @@ How to download:
  - Drag the CatGirls folder into the Chattriggers Modules.
  - Use /ct load in game.
 
+ ----------
+ 
  Changelog
+ 
+ ----------
  
  v1.2.0
  - Added option to use custom Cat Girl images.
