@@ -18,7 +18,7 @@ How to download:
  
  v1.3.0
  - == Fixed a bug with the Settings menu not working correctly.
- - ++ Change all skins in a server to Cat Girl skins option.
+ - ++ Change all player skins to Cat Girl skins option.
  - ++ Change most sound effects to Cat Girl sound effects option. (Nyaa~!)
  
  v1.2.0
