@@ -16,11 +16,16 @@ How to download:
  
  ----------
  
+ v1.3.0
+ - = Fixed a bug with the Settings menu not working correctly.
+ - + Change all skins in a server to Cat Girl skins option.
+ - + Change most sound effects to Cat Girl sound effects option. (Nyaa~!)
+ 
  v1.2.0
- - Added option to use custom Cat Girl images.
- - Added Cat Girls and Cat Boys.
+ - + Added option to use custom Cat Girl images.
+ - + Added Cat Girls and Cat Boys.
  
  v1.1.0
- - Fixed a bug that swapped cat girls too fast spamming your screen (Thanks Unclaimed and Debug <3)
- - Added Cat Boy mode and NSFW mode in /catgirls
+ - = Fixed a bug that swapped cat girls too fast spamming your screen (Thanks Unclaimed and Debug <3)
+ - + Added Cat Boy mode and NSFW mode in /catgirls
 
