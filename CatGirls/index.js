@@ -131,41 +131,34 @@ register("command", () => Settings.openGUI()).setName("catgirls")
 
 
 const loadSkin = (buffer, name) => {
-  const resourceLocation = new ResourceLocation("minecraft:skins/" + name);
-  const textureObject = new DynamicTexture(buffer);
-  textureManager.func_110579_a(resourceLocation, textureObject);
-
-  return resourceLocation;
+  const saved = new ResourceLocation("minecraft:skins/" + name);
+  const textureb = new DynamicTexture(buffer);
+  textureManager.func_110579_a(saved, textureb);
+  return saved;
 };
 
-const downloadSkin = (uuidString) => {
-  const mojangProfile = JSON.parse(
-    FileLib.getUrlContent(
-      "https://sessionserver.mojang.com/session/minecraft/profile/" + uuidString
-    )
-  );
-  const decodedTextureData = JSON.parse(
+const getSkin = (uuidS) => {
+  const mojangProfile = JSON.parse(FileLib.getUrlContent("https://sessionserver.mojang.com/session/minecraft/profile/" + uuidS));
+  const texturea = JSON.parse(
     java.util.Base64.getDecoder()
       .decode(mojangProfile.properties[0].value)
       .map((c) => java.lang.Character.toString(c))
       .join("")
   );
-  const skinURL = decodedTextureData.textures.SKIN.url;
-
+  const skinURL = texturea.textures.SKIN.url;
   const skinID = skinURL.split("/").pop();
-  const resourceLocation = new ResourceLocation("minecraft:changeskin/" + skinID);
-  const textureObject = new ThreadDownloadImageData(
+  const saved = new ResourceLocation("minecraft:changeskin/" + skinID);
+  const textureb = new ThreadDownloadImageData(
     null,
     skinURL,
     null,
     new ImageBufferDownload()
   );
-  textureManager.func_110579_a(resourceLocation, textureObject); // loadTexture
-
-  return resourceLocation;
+  textureManager.func_110579_a(saved, textureb);
+  return saved;
 };
 
-const updatePlayerSkin = (player, skin, skinType = "slim") => {
+const changePlayerSkin = (player, skin, skinType = "slim") => {
   try {
     const playerInfo = ReflectionHelper.getPrivateValue(
       net.minecraft.client.entity.AbstractClientPlayer,
@@ -249,7 +242,7 @@ function catgirlskin(timeout = 5000) {
     .forEach((p) => {
       const skin = p.getPlayer().func_110306_p();
       skinMapping[p.getUUID().toString()] = skin;
-      updatePlayerSkin(
+      changePlayerSkin(
         p,
         loadedSkins[Math.floor(Math.random() * loadedSkins.length)]
       );
@@ -264,15 +257,12 @@ function catgirlskin(timeout = 5000) {
           return true;
         })
         .forEach((p) => {
-          updatePlayerSkin(p, skinMapping[p.getUUID().toString()]);
+          changePlayerSkin(p, skinMapping[p.getUUID().toString()]);
           delete skinMapping[p.getUUID().toString()];
         });
       catgirlskinsOn = false;
     }, timeout);
 }
-
-
-
 
 register('step', () => {
     catgirlskin();
@@ -295,9 +285,9 @@ function playsound(volume) {
   sound.play();
 }
 
-
 register('soundPlay', (pos, name, vol, pitch, cat, event) => {
   if (!settings.catgirlsoundeffects) return;
+  if (!name) return;
   if (vol == 0) return;
   if (name.toString().includes("step")) return;
   cancel(event);
