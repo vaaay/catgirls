@@ -1,4 +1,4 @@
-# [DOESNT WORK TY CTJS 2.0 ZZZZ] CatGirls
+# [DOESNT WORK ANYMORE TY CTJS 2.0 ZZZZ] CatGirls
 CatGirls for Minecraft Chattriggers.
 
 /catgirls or /cg to open the config menu.
